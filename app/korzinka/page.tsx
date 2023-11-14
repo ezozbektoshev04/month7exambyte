@@ -43,13 +43,13 @@ const KorzinkaPage = () => {
   //   });
   const calculateTotal = () => {
     return added.reduce(
-      (total, el) => total + (el.quantity || 1) * (el.price * 1),
+      (total, el) => total + (el.quantity || 1) * Number(el.price),
       0
     );
   };
   const calculateTotal2 = () => {
     return added.reduce(
-      (total, el) => total + (el.quantity || 1) * (el.price * 1),
+      (total, el) => total + (el.quantity || 1) * Number(el.price),
       3.42
     );
   };
@@ -86,7 +86,7 @@ const KorzinkaPage = () => {
                           +
                         </button>
                       </div>
-                      <p className="p4">{el.quantity * (el.price * 1)}</p>
+                      <p className="p4">{el.quantity * Number(el.price)}</p>
                     </div>
                   </div>
                 ))
