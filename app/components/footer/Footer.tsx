@@ -3,10 +3,7 @@ import React from "react";
 import "./footer.scss";
 // import useStore from "../../store/useStore";
 
-type param = {
-  show: boolean;
-};
-const Footer = ({ show }: param) => {
+const Footer = () => {
   // const { user, register } = useStore();
   return (
     <footer>
